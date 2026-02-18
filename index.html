@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WARJORN — Nations • Roleplay • Worldbuilding</title>
+  <meta name="description" content="WARJORN is a Minecraft server focused on nations, immersive roleplay, and collaborative worldbuilding." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+  <div class="noise-overlay"></div>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#" class="brand">WARJORN</a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#pillars">Pillars</a></li>
+        <li><a href="#join">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="about">
+      <p class="eyebrow">Minecraft Geopolitics Reimagined</p>
+      <h1>Build Nations. <span>Forge Stories.</span> Shape a Living World.</h1>
+      <p class="hero-text">
+        WARJORN is a cinematic Minecraft experience where player-led nations rise and fall,
+        roleplay has consequence, and worldbuilding creates a legacy that lasts.
+      </p>
+      <div class="hero-actions">
+        <a href="#join" class="btn btn-primary">Start Your Nation</a>
+        <a href="#pillars" class="btn btn-secondary">Explore Features</a>
+      </div>
+      <div class="stats-grid">
+        <article>
+          <h3>Player-Run Nations</h3>
+          <p>Claim land, draft laws, negotiate treaties, and command your people.</p>
+        </article>
+        <article>
+          <h3>Deep Roleplay</h3>
+          <p>Create characters, factions, and political drama that actually matters.</p>
+        </article>
+        <article>
+          <h3>Persistent Lore</h3>
+          <p>Every city, war, and alliance permanently writes WARJORN's history.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="pillars container" id="pillars">
+      <article class="card">
+        <div class="icon">🏰</div>
+        <h2>Nations & Diplomacy</h2>
+        <p>Lead kingdoms, establish borders, and compete for influence through strategy and diplomacy.</p>
+      </article>
+      <article class="card">
+        <div class="icon">🎭</div>
+        <h2>Roleplay-First Gameplay</h2>
+        <p>From royal courts to underground guilds, your character choices drive the server narrative.</p>
+      </article>
+      <article class="card">
+        <div class="icon">🌍</div>
+        <h2>Worldbuilding at Scale</h2>
+        <p>Construct districts, monuments, and trade routes that reflect your culture and ambition.</p>
+      </article>
+    </section>
+
+    <section class="join container" id="join">
+      <div class="join-card">
+        <h2>Ready to enter WARJORN?</h2>
+        <p>
+          Gather your allies and prepare your banner. The next great nation is waiting to be written.
+        </p>
+        <div class="ip-row">
+          <span class="server-ip" id="serverIp">play.warjorn.net</span>
+          <button id="copyIpBtn" class="btn btn-primary">Copy IP</button>
+        </div>
+        <small id="copyStatus" aria-live="polite"></small>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> WARJORN • Nations • Roleplay • Worldbuilding</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
